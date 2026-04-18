@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Local AES-GCM Encryptor",
+  "description": "Offline text encryption/decryption using AES-GCM and PBKDF2.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Encrypt / Decrypt",
+    "default_popup": "popup.html"
+  }
+}

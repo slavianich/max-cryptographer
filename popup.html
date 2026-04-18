@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Encryptor</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Local Encryptor</h1>
+
+      <div class="mode-switch" role="tablist" aria-label="Mode">
+        <button id="encryptTab" class="tab active" type="button" data-mode="encrypt" aria-selected="true">
+          Encrypt
+        </button>
+        <button id="decryptTab" class="tab" type="button" data-mode="decrypt" aria-selected="false">
+          Decrypt
+        </button>
+      </div>
+
+      <label for="inputText">Input</label>
+      <textarea id="inputText" rows="6" placeholder="Enter text..."></textarea>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Enter password" autocomplete="off" />
+
+      <button id="actionButton" class="action" type="button">Encrypt</button>
+
+      <label for="outputText">Result</label>
+      <textarea id="outputText" rows="6" readonly placeholder="Result will appear here..."></textarea>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
